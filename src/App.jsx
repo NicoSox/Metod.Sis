@@ -37,7 +37,7 @@ function TodoApp() {
           placeholder="Add a new todo"
           className='p-2 border rounded-md w-full'
         />
-        <button onClick={handleAddTodo} className='text-nowrap !bg-green-800'>Add Todo</button>
+        <button onClick={handleAddTodo} className='text-nowrap !bg-green-800 !text-white'>Add Todo</button>
       </div>
       {todos.length > 0 && <>
       <span className='w-full text-lg text-center pb-0 mb-0'>Tareas pendientes</span>
@@ -49,8 +49,8 @@ function TodoApp() {
         {todos.map((todo, index) => (
           <li key={index} className={`relative flex justify-between items-center px-2 w-full border rounded-md bg-neutral-700 hover:bg-neutral-800 duration-200`}>
           {todo.completed && <span className='absolute my-auto left-2 -rotate-12 bg-blue-600 px-2 py-1 rounded-md pointer-events-none'>Completada</span>}
-            <span className='w-full text-start p-4 cursor-pointer' onClick={() => handleToggleTodo(index)}>{todo.text}</span>
-            {todo.completed && <button onClick={() => handleDeleteTodo(index)} disabled={!todo.completed} className='!bg-red-700'>Delete</button>}
+            <span className='w-full text-start p-4 cursor-pointer !text-white' onClick={() => handleToggleTodo(index)}>{todo.text}</span>
+            {todo.completed && <button onClick={() => handleDeleteTodo(index)} disabled={!todo.completed} className='!bg-red-700 !text-white'>Delete</button>}
           </li>
         ))}
       </ul>
