@@ -11,7 +11,7 @@ __Sandoval Agustín__
 
 __Soxkij Nicolás__ 
 
-__Villalba Maximiliano__ 
+__Villalba Máximo__ 
 
 Curso: Comision 2
 
